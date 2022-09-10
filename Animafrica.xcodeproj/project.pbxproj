@@ -11,6 +11,9 @@
 		2272163228CBC613005ACF74 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272163128CBC613005ACF74 /* AnimalDetailView.swift */; };
 		2272163428CBC7E9005ACF74 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272163328CBC7E9005ACF74 /* HeadingView.swift */; };
 		2272163628CBC8F5005ACF74 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272163528CBC8F5005ACF74 /* InsetGalleryView.swift */; };
+		22917BC028CC77050061A06D /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BBF28CC77050061A06D /* InsetFactView.swift */; };
+		22917BC228CC79480061A06D /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BC128CC79480061A06D /* InsetMapView.swift */; };
+		22917BC428CC7CA40061A06D /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BC328CC7CA40061A06D /* ExternalWeblinkView.swift */; };
 		22B08B3028CA218E00A3739C /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B08B2F28CA218E00A3739C /* AnimalListItemView.swift */; };
 		22B08B3228CA230500A3739C /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B08B3128CA230500A3739C /* AnimalModel.swift */; };
 		22D1C35028C66D67006DBD53 /* AnimafricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1C34F28C66D67006DBD53 /* AnimafricaApp.swift */; };
@@ -44,6 +47,9 @@
 		2272163128CBC613005ACF74 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		2272163328CBC7E9005ACF74 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		2272163528CBC8F5005ACF74 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
+		22917BBF28CC77050061A06D /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		22917BC128CC79480061A06D /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		22917BC328CC7CA40061A06D /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		22B08B2F28CA218E00A3739C /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		22B08B3128CA230500A3739C /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		22D1C34C28C66D67006DBD53 /* Animafrica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animafrica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,9 @@
 				2272163128CBC613005ACF74 /* AnimalDetailView.swift */,
 				2272163328CBC7E9005ACF74 /* HeadingView.swift */,
 				2272163528CBC8F5005ACF74 /* InsetGalleryView.swift */,
+				22917BBF28CC77050061A06D /* InsetFactView.swift */,
+				22917BC128CC79480061A06D /* InsetMapView.swift */,
+				22917BC328CC7CA40061A06D /* ExternalWeblinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,14 +288,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22917BC428CC7CA40061A06D /* ExternalWeblinkView.swift in Sources */,
 				22D1C35228C66D67006DBD53 /* ContentView.swift in Sources */,
 				22B08B3028CA218E00A3739C /* AnimalListItemView.swift in Sources */,
 				22D1C38428C790B4006DBD53 /* MainView.swift in Sources */,
+				22917BC028CC77050061A06D /* InsetFactView.swift in Sources */,
 				22D1C38728C8E19E006DBD53 /* CoverImageView.swift in Sources */,
 				22B08B3228CA230500A3739C /* AnimalModel.swift in Sources */,
 				2272163228CBC613005ACF74 /* AnimalDetailView.swift in Sources */,
 				2272163028CBC577005ACF74 /* CoverImageModel.swift in Sources */,
 				22D1C38028C79096006DBD53 /* MapView.swift in Sources */,
+				22917BC228CC79480061A06D /* InsetMapView.swift in Sources */,
 				22D1C35028C66D67006DBD53 /* AnimafricaApp.swift in Sources */,
 				22D1C37E28C79059006DBD53 /* VideoListView.swift in Sources */,
 				22D1C38228C790A4006DBD53 /* GalleryView.swift in Sources */,
