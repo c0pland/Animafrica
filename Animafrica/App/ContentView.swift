@@ -10,10 +10,28 @@ import SwiftUI
 struct ContentView: View {
 	let animals: [Animal] = Bundle.main.decode("animals.json")
 	let haptics = UIImpactFeedbackGenerator(style: .medium)
-	let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+	@State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+	@State private var gridColumn = 1
+	@State private var toolBarIcon = "square.grid.2x2"
 	@State private var isGridViewActive = false
 	
-    var body: some View {
+	func gridSwitch() {
+		gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+		gridColumn = gridLayout.count
+		// toolbar image
+		switch gridColumn {
+		case 1:
+			toolBarIcon = "square.grid.2x2"
+		case 2:
+			toolBarIcon = "square.grid.3x2"
+		case 3:
+			toolBarIcon = "rectangle.grid.1x2"
+		default:
+			toolBarIcon = "square.grid.2x2"
+		}
+	}
+	
+	var body: some View {
 		NavigationView {
 			Group {
 				if !isGridViewActive {
@@ -46,34 +64,37 @@ struct ContentView: View {
 			.toolbar {
 				ToolbarItem(placement: .navigationBarTrailing) {
 					HStack(spacing: 16) {
+						// List
 						Button {
 							print("List")
-								isGridViewActive = false
+							isGridViewActive = false
 							haptics.impactOccurred()
 						} label: {
 							Image(systemName: "square.fill.text.grid.1x2")
 								.font(.title3)
 								.foregroundColor(isGridViewActive ? .primary : .accentColor)
 						}
+						// Grid
 						Button {
 							print("Grid")
 							isGridViewActive = true
 							haptics.impactOccurred()
+							gridSwitch()
 						} label: {
-							Image(systemName: "square.grid.2x2")
+							Image(systemName: toolBarIcon)
 								.font(.title3)
 								.foregroundColor(isGridViewActive ? .accentColor : .primary)
 						}
-
+						
 					}
 				}
 			}
 		}
-    }
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
