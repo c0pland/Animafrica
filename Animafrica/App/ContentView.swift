@@ -44,6 +44,8 @@ struct ContentView: View {
 								AnimalListItemView(animal: animal)
 							}
 						}
+						AboutView()
+							.modifier(CenterModifier())
 					}
 				} else {
 					ScrollView(.vertical, showsIndicators: false) {
@@ -59,6 +61,7 @@ struct ContentView: View {
 					}
 				}
 			}
+			
 			.navigationTitle("Africa")
 			.navigationBarTitleDisplayMode(.large)
 			.toolbar {
@@ -66,7 +69,6 @@ struct ContentView: View {
 					HStack(spacing: 16) {
 						// List
 						Button {
-							print("List")
 							isGridViewActive = false
 							haptics.impactOccurred()
 						} label: {
